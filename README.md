@@ -10,14 +10,14 @@ This plugin was based on this Apache [project](https://github.com/apache/cordova
 
 - [Installation](#installation)
 - [Methods](#methods)
-    - [cordova.plugins.Keyboard.shrinkView](#cordovapluginskeyboardshrinkview)
-    - [cordova.plugins.Keyboard.hideFormAccessoryBar](#cordovapluginskeyboardhideformaccessorybar)
-    - [cordova.plugins.Keyboard.disableScrollingInShrinkView](#cordovapluginskeyboarddisablescrollinginshrinkview)
-    - [cordova.plugins.Keyboard.hide](#cordovapluginskeyboardhide)
-    - [cordova.plugins.Keyboard.show](#cordovapluginskeyboardshow)
+    - [cordova.plugins.Keyboard.shrinkView](#keyboardshrinkview)
+    - [cordova.plugins.Keyboard.hideFormAccessoryBar](#keyboardhideformaccessorybar)
+    - [cordova.plugins.Keyboard.disableScrollingInShrinkView](#keyboarddisablescrollinginshrinkview)
+    - [cordova.plugins.Keyboard.hide](#keyboardhide)
+    - [cordova.plugins.Keyboard.show](#keyboardshow)
 - [Properties](#properties)
-    - [cordova.plugins.Keyboard.isVisible](#cordovapluginskeyboardisvisible)
-    - [cordova.plugins.Keyboard.automaticScrollToTopOnHiding](#cordovapluginskeyboardautomaticscrolltotoponhiding)
+    - [cordova.plugins.Keyboard.isVisible](#keyboardisvisible)
+    - [cordova.plugins.Keyboard.automaticScrollToTopOnHiding](#keyboardautomaticscrolltotoponhiding)
 - [Events](#events)
     - [keyboardDidShow](#keyboarddidshow)
     - [keyboardDidHide](#keyboarddidhide)
@@ -48,6 +48,7 @@ Shrink the WebView when the keyboard comes up.
 
 Set to true to shrink the WebView when the keyboard comes up. The WebView shrinks instead of the viewport shrinking and the page scrollable. This applies to apps that position their elements relative to the bottom of the WebView. This is the default behaviour on Android, and makes a lot of sense when building apps as opposed to webpages.
 
+**Fixed scroll the content to bottom when keyboard is showing and the shrinkview param is true. Work with meta viewport-fit=cover fix for iphone x.**
 
 #### Supported Platforms
 
